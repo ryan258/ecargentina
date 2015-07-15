@@ -1,5 +1,6 @@
-<!doctype html>
-<html class="no-js" lang="en">
+<!DOCTYPE html>
+
+<html class="no-js" lang="es">
 
 	{% include head.html %}
 
@@ -7,14 +8,22 @@
     {% include nav.html %}
   	{% include header.html %}
 
-  		{{ content }}
+  	<div class="page">
+
+      <article id="top" class="page-content">
+
+        {{ content }}
+
+      </article>
+
+    </div>
 
   	{% include footer.html %}
 
-  	<script src="{{site.baseurl}}/js/vendor/jquery.js"></script>
-    <script src="{{site.baseurl}}/js/foundation.min.js"></script>
-    <script>
-      $(document).foundation();
-    </script>
+  	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
