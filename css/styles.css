@@ -38,3 +38,11 @@ li {
 	}
 }
 
+@media only screen and (min-width: 480px) and (max-width: 1025px) {
+	.main-header {
+		background: url('../img/hogar/e-cigarrillos-1.jpg') no-repeat center;
+		background-size: cover;
+		height: 80vh;
+		margin-top: 50px;
+	}
+}
